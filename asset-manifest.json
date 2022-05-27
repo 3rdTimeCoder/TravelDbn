@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TravelDbn/static/css/main.9b211d67.chunk.css",
+    "main.js": "/TravelDbn/static/js/main.16e5144f.chunk.js",
+    "main.js.map": "/TravelDbn/static/js/main.16e5144f.chunk.js.map",
+    "runtime-main.js": "/TravelDbn/static/js/runtime-main.54f6e9f2.js",
+    "runtime-main.js.map": "/TravelDbn/static/js/runtime-main.54f6e9f2.js.map",
+    "static/js/2.68540829.chunk.js": "/TravelDbn/static/js/2.68540829.chunk.js",
+    "static/js/2.68540829.chunk.js.map": "/TravelDbn/static/js/2.68540829.chunk.js.map",
+    "index.html": "/TravelDbn/index.html",
+    "precache-manifest.d17019d8536e0c17bffdda82b381f203.js": "/TravelDbn/precache-manifest.d17019d8536e0c17bffdda82b381f203.js",
+    "service-worker.js": "/TravelDbn/service-worker.js",
+    "static/css/main.9b211d67.chunk.css.map": "/TravelDbn/static/css/main.9b211d67.chunk.css.map",
+    "static/js/2.68540829.chunk.js.LICENSE.txt": "/TravelDbn/static/js/2.68540829.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54f6e9f2.js",
+    "static/js/2.68540829.chunk.js",
+    "static/css/main.9b211d67.chunk.css",
+    "static/js/main.16e5144f.chunk.js"
+  ]
+}
