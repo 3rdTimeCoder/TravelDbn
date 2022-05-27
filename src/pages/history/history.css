@@ -1,0 +1,116 @@
+.history {
+  padding-top: 65px;
+  overflow-x: hidden;
+  background-color: #e5e3e4;
+}
+.history__wrapper {
+  padding: 20px 40px;
+  padding-bottom: 0;
+  display: flex;
+}
+.history__card {
+  width: 60%;
+  padding: 20px;
+}
+.history__card h2,
+.history__card p {
+  color: #05647a;
+}
+.history__card p {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+}
+.history__cardFooter {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #8b929a;
+  border-radius: 40px;
+  background-color: #05647a;
+  padding: 0 30px;
+  margin-top: 2rem;
+}
+.history__cardFooter > h4 {
+  color: #e5e3e4;
+  margin-bottom: 0;
+  padding: 8px 0;
+  font-size: 1.3rem !important;
+}
+.history__cardFooter > h4:hover{
+  color:#101010;
+}
+.last {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.first {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.history__cardFooter h4:hover,
+.history__cardFooter h4:focus {
+  letter-spacing: 4px;
+}
+
+.history__imgSection {
+  width: 40%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.history__imgContainer {
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: var(--dark-shadow);
+}
+.history__imgContainer iframe {
+  border-radius: 20px;
+}
+
+.history__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1072px) {
+  /* css for smaller screens */
+  .history__cardFooter {
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: var(--light-shadow);
+  }
+  .history__cardFooter h4 {
+    color: #307c91;
+    border-color: transparent;
+  }
+  .history__card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .history__cardFooter {
+    box-shadow: none;
+    width: calc(100% + 30%);
+    position: relative;
+    left: -15%;
+  }
+  .history__cardFooter h4 {
+    font-size: 0.87rem !important;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .history__cardFooter {
+    flex-direction: column;
+  }
+  .history__cardFooter h4 {
+    font-size: 0.87rem;
+  }
+}

@@ -1,0 +1,115 @@
+.destinations {
+  padding-top: 65px;
+  overflow-x: hidden;
+  background-color: rgba(5, 100, 122, 0.1);
+  background-color: #e5e3e4;
+}
+.destinations__wrapper {
+  padding: 20px 40px;
+  padding-bottom: 0;
+  /* display: flex; */
+}
+.destinations__heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 65px;
+}
+
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: #05647a;
+  margin: 0 auto;
+}
+.destinations__images {
+  height: calc(100vh - 150px);
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  max-width: 1400px;
+}
+.destinations__imagesSect {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  /* display: flex; */
+}
+.destinations__imgContainer {
+  /* border: 2px solid #111; */
+  width: 300px;
+  height: 300px;
+  /* border-radius: 20px; */
+  box-shadow: var(--dark-shadow);
+  margin-bottom: 1rem;
+  /* display: flex; */
+  overflow-x: hidden;
+  position: relative;
+}
+.destinations__imgContainer img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px; */
+  object-fit: cover;
+  position: absolute;
+  transition: 1s;
+}
+.destinations__imgContainer img.next,
+.destinations__imgContainer img.last {
+  transform: translateX(600px);
+  transform: translateX(100%);
+  /* z-index: -1; */
+}
+.destinations__imgContainer img.prev {
+  transform: translateX(-600px);
+  transform: translateX(-100%);
+  /* z-index: 5; */
+}
+.destinations__imgContainer img.active {
+  transform: translateX(0px);
+  z-index: 5;
+}
+.destinations__imagesSect > h4 {
+  text-align: center;
+  font-size: 1rem !important;
+
+}
+/* for adjusting image sizes */
+@media screen and (max-width: 720px) {
+  .destinations__images {
+    grid-template-columns: 1fr;
+  }
+  .destinations__imgContainer {
+    width: 400px !important;
+  }
+}
+@media screen and (min-width: 820px) {
+  .destinations__imgContainer {
+    width: 350px !important;
+  }
+}
+@media screen and (min-width: 920px) {
+  .destinations__imgContainer {
+    width: 400px !important;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .destinations__imgContainer {
+    width: 450px !important;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .destinations__imgContainer {
+    width: 500px !important;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .destinations__imgContainer {
+    width: 550px !important;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .destinations__imgContainer {
+    width: 600px !important;
+  }
+}
