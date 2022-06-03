@@ -8,8 +8,6 @@ export const buildings = [
   "/travelAssets/building7.jpg",
   "/travelAssets/building8.jpg",
   "/travelAssets/building9.jpg",
-  // "/travelAssets/building10.jpg",
-  // "/travelAssets/building11.png",
   "/travelAssets/building1.jpg",
 ];
 
@@ -23,7 +21,6 @@ export const beaches = [
   "/travelAssets/beach7.jpg",
   "/travelAssets/beach8.jpg",
   "/travelAssets/beach9.jpg",
-  // "/travelAssets/beach10.jpg",
   "/travelAssets/beach1.jpg",
 ];
 
@@ -49,6 +46,6 @@ export const nature = [
   "/travelAssets/nature7.jpg",
   "/travelAssets/nature8.jpg",
   "/travelAssets/nature9.jpg",
-  // "/travelAssets/nature10.jpg",
+  "/travelAssets/nature10.jpg",
   "/travelAssets/nature1.jpg",
 ];
