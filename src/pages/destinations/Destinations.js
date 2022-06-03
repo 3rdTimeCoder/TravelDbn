@@ -9,17 +9,16 @@ const Destinations = () => {
   let [beachesPointer, setBeachesPointer] = useState(0);
   let [locationsPointer, setLocationsPointer] = useState(0);
   let [naturePointer, setNaturePointer] = useState(0);
-  const numOfImgs = 9;
+  const [numOfImgs, setNumOfImgs] =  useState(9);
 
   const startSlider = (lastIndex, pointer, setPointer, seconds) => {
-    let s = setInterval(() => {
+
+    let s = setInterval(() => { //try usinf useRef instead and see if it makes a difference in execution.
       if (pointer > lastIndex) {
         return;
       } else {
         setPointer(pointer++);
       }
-      console.log("lastIndex", lastIndex);
-      console.log("pointer", pointer);
     }, seconds);
 
     return s;
@@ -105,7 +104,7 @@ const Destinations = () => {
 
   return (
     
-    <section className="destinations" onload="setBuilding">
+    <section className="destinations">
       <div className="destinations__wrapper">
         <div className="destinations__heading">
           <h2>Destinations</h2>
@@ -128,7 +127,7 @@ const Destinations = () => {
                   position = "prev";
                 }
 
-                return <img src={building} className={position} alt="" />;
+                return <img src={building} className={position} alt="beach front" key={index} />;
               })}
             </div>
             <h4>Buildings</h4>
@@ -149,7 +148,7 @@ const Destinations = () => {
                   position = "prev";
                 }
 
-                return <img src={beach} className={position} alt="" />;
+                return <img src={beach} className={position} alt="beach front" key={index} />;
               })}
             </div>
             <h4>Beaches</h4>
@@ -170,7 +169,7 @@ const Destinations = () => {
                   position = "prev";
                 }
 
-                return <img src={location} className={position} alt="" />;
+                return <img src={location} className={position} alt="beach front" key={index} />;
               })}
             </div>
             <h4>Locations</h4>
@@ -191,7 +190,7 @@ const Destinations = () => {
                   position = "prev";
                 }
 
-                return <img src={nat} className={position} alt="" />;
+                return <img src={nat} className={position} alt="beach front" key={index} />;
               })}{" "}
             </div>
             <h4>Nature</h4>

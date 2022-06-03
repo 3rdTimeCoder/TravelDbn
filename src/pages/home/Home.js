@@ -6,18 +6,18 @@ import Facebook from "@material-ui/icons/Facebook";
 
 const Home = () => {
   return (
-    <section class="home">
+    <section className="home">
       
       {/* video from: https://www.youtube.com/watch?v=FNrPITxpX3Y */}
       <video
         src="/travelAssets/DbnBg.mp4"
-        class="home__video"
+        className="home__video"
         muted
         loop
         autoPlay
       ></video>
 
-      <div class="home__text">
+      <div className="home__text">
         <h2>EThekwini</h2>
         <h3>Where everyday's Friday.</h3>
         <p>
@@ -28,7 +28,8 @@ const Home = () => {
         <a href="/destinations">Explore</a>
       </div>
 
-      <ul class="home__social-links">
+
+      <ul className="home__social-links">
         <li>
           <a href="#deadlink">
             <Facebook className="home__socialIcons" />

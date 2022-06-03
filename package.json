@@ -13,7 +13,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
-    "react-ticker": "^1.2.2"
+    "react-ticker": "^1.2.2",
+    "webpack": "^5.73.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -38,8 +39,6 @@
       "last 1 safari version"
     ]
   },
-  "main": "index.js",
-  "type": "module",
   "author": "Nomah",
   "license": "ISC",
   "description": "",

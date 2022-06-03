@@ -44,8 +44,8 @@ export const nature = [
   "/travelAssets/nature4.jpg",
   "/travelAssets/nature6.jpg",
   "/travelAssets/nature7.jpg",
+  "/travelAssets/nature10.jpg",
   "/travelAssets/nature8.jpg",
   "/travelAssets/nature9.jpg",
-  "/travelAssets/nature10.jpg",
   "/travelAssets/nature1.jpg",
 ];
