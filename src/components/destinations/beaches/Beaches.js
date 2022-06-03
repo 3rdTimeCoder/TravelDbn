@@ -13,9 +13,9 @@ function Beaches() {
         <h1>Beaches to check out EThekwini</h1>
 
         <div className="beaches__card_section">
-          {beachesArray.map((beach) => {
+          {beachesArray.map((beach, index) => {
             return (
-              <article className="beaches__card">
+              <article className="beaches__card" key={index}>
                 <img src={beach} alt="" className="beaches__card_img" />
                 <h3>Loremo Ipsumo</h3>
                 <p>

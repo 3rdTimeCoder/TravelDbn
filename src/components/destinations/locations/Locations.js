@@ -17,9 +17,9 @@ const Locations = () => {
         <h1>Locations to Visit EThekwini</h1>
 
         <div className="locations__card_section">
-          {locationsArray.map((location) => {
+          {locationsArray.map((location, index) => {
             return (
-              <article className="locations__card">
+              <article className="locations__card" key={index}>
                 <img src={location} alt="" className="locations__card_img" />
                 <h3>Loremo Ipsumo</h3>
                 <p>

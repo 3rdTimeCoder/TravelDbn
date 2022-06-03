@@ -17,9 +17,9 @@ const Nature = () => {
         <h1>Places to Enjoy Nature EThekwini</h1>
 
         <div className="nature__card_section">
-          {natureArray.map((nat) => {
+          {natureArray.map((nat, index) => {
             return (
-              <article className="nature__card">
+              <article className="nature__card" key={index}>
                 <img src={nat} alt="" className="nature__card_img" />
                 <h3>Loremo Ipsumo</h3>
                 <p>

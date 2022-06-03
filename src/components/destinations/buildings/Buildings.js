@@ -17,9 +17,9 @@ const Buildings = () => {
         <h1>Buildings to See EThekwini</h1>
 
         <div className="building__card_section">
-          {buildingsArray.map((building) => {
+          {buildingsArray.map((building, index) => {
             return (
-              <article className="building__card">
+              <article className="building__card" key={index}>
                 <img src={building} alt="" className="building__card_img" />
                 <h3>Loremo Ipsumo</h3>
                 <p>
