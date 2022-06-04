@@ -42,7 +42,7 @@ const Destinations = () => {
     return ()=>{
       clearInterval(slide1)
     }
-  }, [ buildingsPointer]);
+  }, [ buildingsPointer, numOfImgs]);
 
   // Beaches
   useEffect(() => {
@@ -62,7 +62,7 @@ const Destinations = () => {
     return ()=>{
       clearInterval(slide2)
     }
-  }, [ beachesPointer]);
+  }, [ beachesPointer, numOfImgs]);
 
   // // Locations
   useEffect(() => {
@@ -81,7 +81,7 @@ const Destinations = () => {
     return ()=>{
       clearInterval(slide3)
     }
-  }, [ locationsPointer]);
+  }, [ locationsPointer, numOfImgs]);
 
   // // Nature
   useEffect(() => {
@@ -100,7 +100,7 @@ const Destinations = () => {
     return ()=>{
       clearInterval(slide4)
     }
-  }, [naturePointer]);
+  }, [naturePointer, numOfImgs]);
 
   return (
     

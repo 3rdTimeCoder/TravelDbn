@@ -17,7 +17,7 @@ const Navbar = ({ home }) => {
   }
 
   return (
-    <header className={!home && "header"}>
+    <header className={home? "" : "header"}>
       <h2 className="logo">TravelDBN</h2>
       <div className={showMenu ? "home__menu active" : "home__menu"}>
         <ul>
